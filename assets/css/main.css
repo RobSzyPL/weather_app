@@ -269,6 +269,19 @@ summary {
   display: list-item;
 }
 
+body {
+  font-family: "Roboto" Sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton" sans-serif;
+}
+
 .bg {
   position: fixed;
   z-index: -1;
@@ -278,4 +291,92 @@ summary {
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.weather_title {
+  margin: 0 0 30px 0;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.weather__form {
+  width: 600px;
+  padding: 20px 20px;
+  margin: 10px;
+}
+.weather__city {
+  width: 500px;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+}
+.weather__city::-webkit-input-placeholder {
+  color: green;
+}
+.weather__city::-moz-placeholder {
+  color: green;
+}
+.weather__city:-ms-input-placeholder {
+  color: green;
+}
+.weather__city::-ms-input-placeholder {
+  color: green;
+}
+.weather__city::placeholder {
+  color: green;
+}
+.weather__info {
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.weather__temp {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.weather__temp span {
+  font-size: 20px;
+  margin: 10px 10px;
+}
+.weather__details p {
+  margin: 0 0 5px 0;
+}
+.weather__details p:last-of-type {
+  margin: 0;
 }
